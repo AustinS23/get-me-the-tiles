@@ -1,0 +1,5 @@
+query Tiles {
+    tiles {
+        id
+    }
+}
