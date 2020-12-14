@@ -1,0 +1,8 @@
+schema: '../server/schema.js'
+documents: ['src/**/*.gql']
+generates:
+  ./src/graphql/_generated.tsx:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
