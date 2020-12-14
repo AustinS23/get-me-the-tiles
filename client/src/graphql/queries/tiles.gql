@@ -1,5 +1,9 @@
 query Tiles {
-    tiles {
-        id
+  tiles {
+    id
+    attributes {
+      name
+      currentTileUrl
     }
+  }
 }

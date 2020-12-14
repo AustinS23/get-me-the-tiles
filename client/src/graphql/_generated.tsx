@@ -104,6 +104,10 @@ export type TilesQuery = (
   & { tiles: Array<(
     { __typename?: 'Tiles' }
     & Pick<Tiles, 'id'>
+    & { attributes: (
+      { __typename?: 'Attributes' }
+      & Pick<Attributes, 'name' | 'currentTileUrl'>
+    ) }
   )> }
 );
 
@@ -112,6 +116,10 @@ export const TilesDocument = gql`
     query Tiles {
   tiles {
     id
+    attributes {
+      name
+      currentTileUrl
+    }
   }
 }
     `;
