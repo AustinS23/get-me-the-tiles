@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    top: 80%;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.logo-container:hover > .logo {
+    filter: blur(5px);
+}
+
+.logo-container:hover > .name {
+    opacity: 0.8;
+}
+
+.logo {
+  height: 300px;
+  width: 300px;
+  padding: 30px;
+}
+
